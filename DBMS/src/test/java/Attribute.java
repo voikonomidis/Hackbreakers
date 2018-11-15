@@ -1,19 +1,18 @@
-
 import java.io.Serializable;
 
 public class Attribute implements Serializable {
 
     private String name;
-    private DataType datype;
+    private DataType dataType;
     private int size;
 
     public Attribute() {
 
     }
 
-    public Attribute(String name, DataType datype, int size) {
+    public Attribute(String name, DataType dataType, int size) {
         this.name = name;
-        this.datype = datype;
+        this.datype = dataType;
         this.size = size;
     }
 
@@ -25,12 +24,12 @@ public class Attribute implements Serializable {
         return this.name;
     }
 
-    public void setDatype(DataType datype) {
-        this.datype = datype;
+    public void setDatype(DataType dataType) {
+        this.dataType = dataType;
     }
 
     public DataType getDatype() {
-        return this.datype;
+        return this.dataType;
     }
 
     public void setSize(int size) {
