@@ -1,3 +1,5 @@
+package hackbreakers.dbms;
+
 import java.io.Serializable;
 
 public class DataType implements Serializable{
