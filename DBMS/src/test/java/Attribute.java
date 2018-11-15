@@ -1,8 +1,8 @@
 import java.io.Serializable;
 
-public class Attribute implements Serializable {
+public class Attribute implements Serializable {//Description of each attribute
 
-    private String ΝΑΜΕ;
+    private String name;
     private DataType dataType;
     private int size;
 
@@ -11,17 +11,17 @@ public class Attribute implements Serializable {
     }
 
     public Attribute(String name, DataType dataType, int size) {
-        this.ΝΑΜΕ = name;
-        this.datype = dataType;
+        this.name = name;
+        this.dataType = dataType;
         this.size = size;
     }
 
     public void setName(String name) {
-        this.ΝΑΜΕ = name;
+        this.name = name;
     }
 
     public String getName() {
-        return this.ΝΑΜΕ;
+        return this.name;
     }
 
     public void setDatype(DataType dataType) {
