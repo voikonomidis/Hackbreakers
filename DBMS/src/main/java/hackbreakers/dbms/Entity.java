@@ -2,7 +2,7 @@
 import java.io.Serializable;
 import java.util.ArrayList;
         
-public class Entity {
+public class Entity implements Serializable{ //Description of each entity
     
     private String name;
     private DataType dataType;
@@ -17,6 +17,7 @@ public class Entity {
         
     }
     
+    //Set methods
     public void setname(String name) {
         this.name = name;
     }
@@ -29,6 +30,7 @@ public class Entity {
         this.size = size;
     }
     
+    //Get methods
     public String getName() {
         return name;
     }
