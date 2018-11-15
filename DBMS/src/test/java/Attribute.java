@@ -7,7 +7,7 @@ public class Attribute implements Serializable {//Description of each attribute
     private int size;
 
     public Attribute() {
-
+        
     }
 
     public Attribute(String name, DataType dataType, int size) {
