@@ -2,7 +2,7 @@ import java.io.Serializable;
 
 public class Attribute implements Serializable {
 
-    private String name;
+    private String ΝΑΜΕ;
     private DataType dataType;
     private int size;
 
@@ -11,17 +11,17 @@ public class Attribute implements Serializable {
     }
 
     public Attribute(String name, DataType dataType, int size) {
-        this.name = name;
+        this.ΝΑΜΕ = name;
         this.datype = dataType;
         this.size = size;
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.ΝΑΜΕ = name;
     }
 
     public String getName() {
-        return this.name;
+        return this.ΝΑΜΕ;
     }
 
     public void setDatype(DataType dataType) {
