@@ -50,6 +50,6 @@ public class EntityData implements Serializable{//Δίνουμε τη δυνατ
     //toString
     @Override
     public String toString() {
-        return "Entity" + entity + " " + "Date of Creation" + " " + "Record" +record;
+        return record + "Entity" + entity + " " + "Date of Creation" + " " + "Record";
     }
 }
