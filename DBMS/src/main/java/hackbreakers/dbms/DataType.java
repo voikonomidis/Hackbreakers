@@ -2,9 +2,10 @@ package hackbreakers.dbms;
 
 import java.io.Serializable;
 
-public class DataType implements Serializable{
-    //Μπορούμε να προσθέσουμε μια λίστα με τους τύπους που μπορεί να δώσει στη μεταβλητή ο χρήστης
-    private String name; //Το όνομα του datatype σε " ". Μπορει να παίρνει τους τύπους Int, String, Boolean, Date, other...
+public class DataType implements Serializable {//Contains: 2 methods, 24 lines.
+//This class describes each attribute's datatype that user can inserts.
+
+    private String name; //Numeric, Characters, Boolean or Date.
 
     public DataType() {
     }
@@ -20,5 +21,4 @@ public class DataType implements Serializable{
     public void setName(String name) {
         this.name = name;
     }
-
 }

@@ -3,10 +3,11 @@ package hackbreakers.dbms;
 import java.io.Serializable;
 import java.util.List;
 
-public class Entity implements Serializable { //Description of each entity.
+public class Entity implements Serializable {//Contains: 4 methods, 35 lines.
+//This class describes each entity.
 
     private String name;
-    private List<Attribute> attributes;// A list of description of attributes.
+    private List<Attribute> attributes;
 
     public Entity() {
     }
@@ -15,15 +16,15 @@ public class Entity implements Serializable { //Description of each entity.
         this.name = name;
         this.attributes = attributes;
     }
-    //Set methods
+
     public void setname(String name) {
         this.name = name;
     }
-    
+
     public void setAttributes(List<Attribute> attributes) {
         this.attributes = attributes;
     }
-    //Get methods
+
     public String getName() {
         return name;
     }
