@@ -16,19 +16,19 @@ public class Attribute implements Serializable {//Contains: 4 methods, 34 lines.
         this.dataType = dataType;
     }
 
+    public String getName() {
+        return name;
+    }
+
     public void setName(String name) {
         this.name = name;
     }
 
-    public String getName() {
-        return this.name;
+    public DataType getDataType() {
+        return dataType;
     }
 
-    public void setDatatype(DataType dataType) {
+    public void setDataType(DataType dataType) {
         this.dataType = dataType;
-    }
-
-    public DataType getDatatype() {
-        return this.dataType;
     }
 }

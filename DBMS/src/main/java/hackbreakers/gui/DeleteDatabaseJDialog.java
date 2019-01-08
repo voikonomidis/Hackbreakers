@@ -5,14 +5,14 @@ import javax.swing.JOptionPane;
 import javax.swing.JScrollPane;
 import javax.swing.JSplitPane;
 import javax.swing.JTabbedPane;
-import mydatabase.Database;
+import hackbreakers.dbms.Database;
 
-public class DeleteDatabaseJDialog extends javax.swing.JDialog {
+public class DeleteDatabaseJDialog extends javax.swing.JDialog {//Contains: 4 methods, 136 lines.
 
     /**
      * Creates new form ShowDatabasesJDialog
      */
-    public DeleteDatabaseJDialog(java.awt.Frame parent, boolean modal) {//Contains: 4 methods, 135 lines.
+    public DeleteDatabaseJDialog(java.awt.Frame parent, boolean modal) {
 
         super(parent, modal);
         initComponents();
