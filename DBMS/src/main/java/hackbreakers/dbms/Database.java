@@ -309,5 +309,47 @@ public class Database {//Contains: 16 methods, 353 lines.
         }
         return ent;
     }
+    
+    public List<EntityData> fetchDatabaseEntityDataGUI(String dbName, String entityName) {
+        List<EntityData> entDataList = new ArrayList();
+        String pathDbName = "db_" + dbName + "/" + dbName + ".db";
+        RandomAccessFile raf;
+        try {
+            raf = new RandomAccessFile(pathDbName, "rwd");
+            while (raf.getFilePointer() != raf.length()) {
+                raf.seek(raf.getFilePointer());
+                ObjectInputStream ois = new ObjectInputStream(new FileInputStream(raf.getFD()));
+                EntityData entry = (EntityData) ois.readObject();
+                if (entry.getEntity().getName().equals(entityName) && entry.getDeleted() == 0) {
+                    entDataList.add(entry);
+                }
+            }
+            raf.close();
+        } catch (FileNotFoundException ex) {
+            System.out.println("FILE NOT FOUND EXCEPTION");
+            ex.printStackTrace();
+        } catch (IOException ex) {
+            System.out.println("IO EXCEPTION");
+            ex.printStackTrace();
+        } catch (ClassNotFoundException ex) {
+            System.out.println("CLASS NOT FOUND EXCEPTION");
+            ex.printStackTrace();
+        }
+        return entDataList;
+    }
 
+    public boolean deleteDatabaseGUI(String dbName) {
+        boolean deleted = false;
+        File f = new File("db_" + dbName);
+        if (f.exists() && f.isDirectory()) {
+            File[] dirFiles = f.listFiles();
+            if (dirFiles[0].delete() && dirFiles[1].delete() && f.delete()) {
+                System.out.println("Database " + dbName + " deleted successfully!");
+                deleted = true;
+            }
+        }
+        return deleted;
+    }
 }
+
+
