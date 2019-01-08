@@ -18,7 +18,7 @@ import hackbreakers.dbms.DataType;
 import hackbreakers.dbms.Database;
 import hackbreakers.dbms.Entity;
 
-public class CreateEntityJDialog extends javax.swing.JDialog {//Contains: 7 methods, 253 lines.
+public class CreateEntityJDialog extends javax.swing.JDialog {//Contains: 7 methods, 251 lines.
 
     /**
      * Creates new form CreateEntityJDialog

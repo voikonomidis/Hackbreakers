@@ -1,6 +1,6 @@
 package hackbreakers.gui;
 
-public class AboutJDialog extends javax.swing.JDialog {
+public class AboutJDialog extends javax.swing.JDialog {//Contains: 2 methods, 112 lines.
 
     /**
      * Creates new form AboutJDialog
@@ -8,7 +8,7 @@ public class AboutJDialog extends javax.swing.JDialog {
      * @param parent
      * @param modal
      */
-    public AboutJDialog(java.awt.Frame parent, boolean modal) {//Contains: 2 methods, 111 lines.
+    public AboutJDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
     }

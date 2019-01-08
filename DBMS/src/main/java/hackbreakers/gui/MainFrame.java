@@ -4,7 +4,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JSplitPane;
 import javax.swing.JTabbedPane;
 
-public class MainFrame extends javax.swing.JFrame {//Contains: 14 methods, 220 lines.
+public class MainFrame extends javax.swing.JFrame {//Contains: 14 methods, 221 lines.
 
     /**
      * Creates new form MainFrame
