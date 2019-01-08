@@ -60,7 +60,7 @@ public class MainFrame extends javax.swing.JFrame {//Contains: 14 methods, 221 l
         ourTeamJMenuItem = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("My Database");
+        setTitle("DBMS 1.0");
         setBounds(new java.awt.Rectangle(0, 0, 0, 0));
         setMinimumSize(new java.awt.Dimension(600, 400));
         setSize(new java.awt.Dimension(0, 0));
